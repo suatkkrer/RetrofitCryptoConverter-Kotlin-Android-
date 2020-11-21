@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() , RecyclerViewAdapter.Listener{
     private var cryptoModels: ArrayList<CryptoModel>? = null
     private var recyclerViewAdapter : RecyclerViewAdapter? = null
 
-    //Disposable
+
     private var compositeDisposable: CompositeDisposable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
