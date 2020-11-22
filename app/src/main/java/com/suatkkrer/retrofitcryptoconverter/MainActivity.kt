@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() , RecyclerViewAdapter.Listener{
 
         /*
 
+
+
         val service = retrofit.create(CryptoAPI::class.java)
 
         val call = service.getData()
