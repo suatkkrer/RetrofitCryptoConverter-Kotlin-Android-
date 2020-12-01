@@ -50,52 +50,52 @@ class MainActivity : AppCompatActivity() , RecyclerViewAdapter.Listener{
                 .subscribe(this::handleResponse))
 
 
-        /*
 
 
 
-        val service = retrofit.create(CryptoAPI::class.java)
 
-        val call = service.getData()
+//        val service = retrofit.create(CryptoAPI::class.java)
+//
+//        val call = service.getData()
+//
+//
+//
+//        call.enqueue(object: Callback<List<CryptoModel>> {
+//            override fun onFailure(call: Call<List<CryptoModel>>, t: Throwable) {
+//                t.printStackTrace()
+//            }
+//
+//            override fun onResponse(
+//                call: Call<List<CryptoModel>>,
+//                response: Response<List<CryptoModel>>
+//            ) {
+//                    if (response.isSuccessful) {
+//                        response.body()?.let {
+//                            cryptoModels = ArrayList(it)
+//
+//                            cryptoModels?.let {
+//                                recyclerViewAdapter = RecyclerViewAdapter(it,this@MainActivity)
+//                                recyclerView.adapter = recyclerViewAdapter
+//                            }
+//
+//
+//                           for (cryptoModel : CryptoModel in cryptoModels!!) {
+//                               println(cryptoModel.currency)
+//                               println(cryptoModel.price)
+//
+//                           }
+//
+//
+//
+//                        }
+//                    }
+//
+//            }
+//
+//        })
 
 
 
-        call.enqueue(object: Callback<List<CryptoModel>> {
-            override fun onFailure(call: Call<List<CryptoModel>>, t: Throwable) {
-                t.printStackTrace()
-            }
-
-            override fun onResponse(
-                call: Call<List<CryptoModel>>,
-                response: Response<List<CryptoModel>>
-            ) {
-                    if (response.isSuccessful) {
-                        response.body()?.let {
-                            cryptoModels = ArrayList(it)
-
-                            cryptoModels?.let {
-                                recyclerViewAdapter = RecyclerViewAdapter(it,this@MainActivity)
-                                recyclerView.adapter = recyclerViewAdapter
-                            }
-
-
-                           for (cryptoModel : CryptoModel in cryptoModels!!) {
-                               println(cryptoModel.currency)
-                               println(cryptoModel.price)
-
-                           }
-
-
-
-                        }
-                    }
-
-            }
-
-        })
-
-
-         */
 
     }
 
